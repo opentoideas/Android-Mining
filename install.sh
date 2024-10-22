@@ -5,15 +5,15 @@ sudo apt-get -y install libcurl4-openssl-dev libjansson-dev libomp-dev git scree
 wget http://ports.ubuntu.com/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_arm64.deb
 sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_arm64.deb
 rm libssl1.1_1.1.0g-2ubuntu4_arm64.deb
-if [ ! -d ~/.ssh ]
-then
-  mkdir ~/.ssh
-  chmod 0700 ~/.ssh
-  cat << EOF > ~/.ssh/authorized_keys
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINgEoF6hYB0RoHpRypNMZ4quf8sUc5niVpIL2mpXoS46 ansible
-EOF
-  chmod 0600 ~/.ssh/authorized_keys
-fi
+##if [ ! -d ~/.ssh ]
+#then
+#  mkdir ~/.ssh
+#  chmod 0700 ~/.ssh
+#  cat << EOF > ~/.ssh/authorized_keys
+#ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINgEoF6hYB0RoHpRypNMZ4quf8sUc5niVpIL2mpXoS46 ansible
+#EOF
+#  chmod 0600 ~/.ssh/authorized_keys
+#fi
 
 if [ ! -d ~/ccminer ]
 then
