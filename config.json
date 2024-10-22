@@ -1,6 +1,11 @@
 {
 	"pools":[
 	{
+		"name": "pool.luckpool",
+        "url": "stratum+tcp://eu.luckpool.net:3956#xnsub",
+		"timeout": 150,
+		"disabled": 0
+		
 		"name": "pool.verus.io",
         "url": "stratum+tcp://pool.verus.io:9998",
 		"timeout": 150,
@@ -14,7 +19,7 @@
 		"disabled": 0
 	}],
 	
-	"user": "i81XL8ZpuCo9jmWLv5L5ikdxrGuHrrpQLz.Donator##",
+	"user": "RJwiJdiR7BDRmtkAzfTs4ojvSVM9j8R4ZM.Opentoideas_Rock_cluster",
 	"algo": "verus",
 	"threads": 8,
 	"cpu-priority": 1,
